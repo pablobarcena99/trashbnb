@@ -5,10 +5,6 @@
     <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= f.error_notification %>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
   <div class="form-inputs">
     <%= f.input :first_name,
                 required: true,
@@ -31,30 +27,6 @@
                 required: true,
                 input_html: { autocomplete: "new-password" } %>
   </div>
-<<<<<<< HEAD
-=======
-      <div class="form-inputs">
-        <%= f.input :first_name,
-                    required: true,
-                    autofocus: true %>
-        <%= f.input :last_name,
-                    required: true,
-                    autofocus: true %>
-        <%= f.input :email,
-                    required: true,
-                    autofocus: true,
-                    input_html: { autocomplete: "email" }%>
-        <%= f.input :password,
-                    required: true,
-                    hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                    input_html: { autocomplete: "new-password" } %>
-        <%= f.input :password_confirmation,
-                    required: true,
-                    input_html: { autocomplete: "new-password" } %>
-      </div>
->>>>>>> master
-=======
->>>>>>> master
 
       <div class="form-actions">
         <%= f.button :submit, class:'form-button'%>
