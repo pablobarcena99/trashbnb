@@ -130,9 +130,13 @@
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-around;
+  align-items: center;
   margin: auto;
   h1{
     font-size: 50px;
+  }
+  img {
+    border-radius: 50% !important;
   }
 background: linear-gradient(48deg, #e8005a, #00e8d5);
 background-size: 400% 400%;

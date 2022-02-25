@@ -1,22 +1,9 @@
-<<<<<<< HEAD
 <h1 class="dash-title">Your Trashboard</h1>
-=======
-
-
-<h1>Your Trashboard</h1>
->>>>>>> master
 
   <div class="dashboard-card user-profile">
-<<<<<<< HEAD
-    <%= cl_image_tag @user.photo.key %>
-    <h1>Welcome <%= @user.first_name %> <%= @user.last_name %>!</h1>
-=======
     <%= cl_image_tag @user.photo.key if @user.photo.attached? %>
     <%= image_tag "blue trash.png" unless @user.photo.attached?%>
-
-    <h2><%= @user.first_name %></h2>
-    <h2><%= @user.last_name %></h2>
->>>>>>> master
+    <h1>Welcome <%= @user.first_name %> <%= @user.last_name %>!</h1>
   </div>
 
 <div class="dashboard-container">
