@@ -12,12 +12,12 @@
       <% @user.bookings.each do |booking| %>
         <%= link_to booking.receptacle do %>
           <div class="dashboard-card" >
-          
+
             <h3><%=booking.receptacle.name%></h3>
               <img src='<%= cl_image_path booking.receptacle.picture.key, height: 300, width: 400, crop: :fill %>'>
               <p><i class="fa-solid fa-calendar-days"></i> Your booking dates:</p>
               <p><%=booking.start_date.strftime("%B %d")%> - <%=booking.end_date.strftime("%B %d, %Y")%></p>
-              <p><i class="fa-solid fa-money-check-dollar"></i> Price Per Day: €<%= number_with_delimiter(booking.receptacle.price_per_day, :delimiter => ",") %></p>
+              <p><i class="fa-solid fa-money-check-dollar"></i> Total Price: €<%= number_with_delimiter(booking.total_price, :delimiter => ",") %></p>
           </div>
         <% end %>
       <%end%>
